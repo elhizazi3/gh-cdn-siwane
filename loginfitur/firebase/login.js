@@ -366,16 +366,4 @@ if (splitMetaContent + 'firebaseLogin' === loginOpen(loginSettings.license)) {
     if (someCondition) {
         window.location.reload();
     }
-
-    // جلب بيانات المستخدم والتحقق من الحالة
-    fetch(loginOpen('Xiv0Zia6md90hRvpZwEAYH02rCJbrd1DWQWAhQc0mRk0WLjoWwEdWQkAZ2PzYd5CY20pWwEdWQkAZ2PaY2hzYB5eZ29o'))
-        .then(response => response.json())
-        .then(data => {
-            if (!data.user || data.user[contentIdentifier] !== true) {
-                window.location.reload();
-            }
-        })
-        .catch(error => {
-            window.location.reload();
-        });
 }
